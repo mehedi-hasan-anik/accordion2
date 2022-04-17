@@ -1,0 +1,43 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+.container ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 600px;
+}
+.container ul li label {
+  font-size: 40px;
+  cursor: pointer;
+}
+.container ul li {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 10px;
+}
+.container ul li .content {
+  display: none;
+}
+.container input[type="radio"] {
+  display: none;
+}
+.container input[type="radio"]:checked + .content {
+  display: block;
+}
